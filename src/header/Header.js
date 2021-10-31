@@ -2,11 +2,16 @@ import React from 'react'
 import './header.css'
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import { Link } from 'react-router-dom';
+import { useStateValue } from '../state/StateProvider'
 
 function Header() {
+    const [{ basket }] = useStateValue()
     return (
         <div className="header">
-            <img className="header_logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Logo" />
+            <Link to="/">
+                <img className="header_logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Logo" />
+            </Link>
             <div className="header_search">
                 <input type="text" className="header_searchInput" />
                 <SearchIcon className="header_searchIcon" />
@@ -24,10 +29,12 @@ function Header() {
                     <span className="header_optionLine1">Your</span>
                     <span className="header_optionLine2">Prime</span>
                 </div>
-                <div className="header_optionBasket">
-                    <ShoppingBasketIcon />
-                    <span className="header_optionLine2 header_basketCount">0</span>
-                </div>
+                <Link to="/checkout">
+                    <div className="header_optionBasket">
+                        <ShoppingBasketIcon />
+                        <span className="header_optionLine2 header_basketCount">{basket?.length}</span>
+                    </div>
+                </Link>
             </div>
         </div>
     )
