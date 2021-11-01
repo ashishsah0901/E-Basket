@@ -11,6 +11,11 @@
     border-bottom: 1px solid lightgray;
 }
 
+.ckeckout_title_email {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
 .checkout_ad {
     width: 100%;
     margin-bottom: 10px;
