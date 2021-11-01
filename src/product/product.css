@@ -45,3 +45,11 @@
     margin: auto;
     margin-bottom: 15px;
 }
+
+.product_info_title {
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;  
+    overflow: hidden;
+    width: 100%;
+}

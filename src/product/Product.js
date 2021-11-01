@@ -20,7 +20,7 @@ const Product = (props) => {
     return (
         <div className="product">
             <div className="product_info">
-                <p>{title}</p>
+                <div className='product_info_title'>{title}</div>
                 <p className="product_price">
                     <small>&#x20B9;</small>
                     <strong>{price}</strong>
