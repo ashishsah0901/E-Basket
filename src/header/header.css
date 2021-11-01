@@ -27,17 +27,26 @@
     padding: 10px;
     border: none;
     width: 100%;
+    border-radius: 7px 0 0 7px;
 }
 
 .header_searchIcon {
     padding: 5px;
     background-color: #cd9042;
     height: 22px !important;
+    border-radius: 0 7px 7px 0;
+    cursor: pointer;
+}
+
+.header_searchIcon:hover {
+    color: white;
+    transform: scaleY(0.95);
 }
 
 .header_nav {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .header_option {
@@ -46,6 +55,11 @@
     margin-left: 10px;
     margin-right: 10px;
     color: white;
+}
+
+.header_option:hover {
+    color: rgb(134, 134, 134);
+    cursor: pointer;
 }
 
 .header_optionLine1 {
@@ -61,6 +75,10 @@
     display: flex;
     align-items: center;
     color: white;
+}
+
+.header_optionBasket:hover {
+    color: rgb(134, 134, 134);
 }
 
 .header_basketCount {

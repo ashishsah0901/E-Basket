@@ -1,14 +1,16 @@
 import React from 'react'
 import './product.css'
 import { useStateValue } from '../state/StateProvider'
+import { v4 as uuidv4 } from 'uuid';
 
 const Product = (props) => {
     const { id, title, image, price, rating } = props
     const [, dispatch] = useStateValue()
-    const addToBasket = () => {
+    const addToBasket = async () => {
         dispatch({
             type: 'ADD_TO_BASKET',
             item: {
+                key: uuidv4(),
                 id: id,
                 title: title,
                 image: image,

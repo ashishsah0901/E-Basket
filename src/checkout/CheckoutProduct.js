@@ -3,12 +3,12 @@ import './checkoutProduct.css'
 import { useStateValue } from '../state/StateProvider'
 
 const CheckoutProduct = (props) => {
-    const { id, title, image, price, rating } = props.element
+    const { key, title, image, price, rating } = props.element
     const [, dispatch] = useStateValue()
     const removeFromBasket = () => {
         dispatch({
             type: 'REEMOVE_FROM_BASKET',
-            id: id
+            id: key
         })
     }
     return (

@@ -20,11 +20,11 @@ function Header() {
                 <img className="header_logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Logo" />
             </Link>
             <div className="header_search">
-                <input type="text" className="header_searchInput" />
+                <input placeholder='Enter to search...' type="text" className="header_searchInput" />
                 <SearchIcon className="header_searchIcon" />
             </div>
             <div className="header_nav">
-                <Link className='link' to={!user && '/login'} style={{ textDecoration: 'none' }}>
+                <Link className='link' to={user ? '/' : '/login'}>
                     <div onClick={handleAuthentication} className="header_option">
                         <span className="header_optionLine1">Hello {user ? user.email : 'Guest'}</span>
                         <span className="header_optionLine2">{user ? 'Sign Out' : 'Sign In'}</span>

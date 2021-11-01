@@ -1,12 +1,29 @@
 import React from 'react'
 import './home.css'
 import Product from '../product/Product'
+import PinDropIcon from '@mui/icons-material/PinDrop';
+import AwesomeSlider from 'react-awesome-slider';
+import withAutoplay from 'react-awesome-slider/dist/autoplay';
+import 'react-awesome-slider/dist/styles.css';
 
 export const Home = () => {
+    const AutoplaySlider = withAutoplay(AwesomeSlider);
     return (
         <div className="home">
             <div className="home_container">
-                <img className="home_image" src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg" alt="Banner" />
+                <div className="home_location">
+                    <PinDropIcon />
+                    <p>Your orders will be delivers to your address.</p>
+                </div>
+                <AutoplaySlider className='home_slider'
+                    play={true}
+                    cancelOnInteraction={false}
+                    interval={4000}
+                >
+                    <div data-src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg" />
+                    <div data-src="https://images-eu.ssl-images-amazon.com/images/G/31/img20/Events/Jupiter21/P4/tomo/1500x280_desk_store__event_header_endstomorrow_P4_EN.jpg" />
+                    <div data-src="https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP_V2.jpg" />
+                </AutoplaySlider>
                 <div className="home_row">
                     <Product id="31102021-1" title="The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses" price={1966.00} rating={4} image="https://images-eu.ssl-images-amazon.com/images/I/51T-sMqSMiL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg" />
                     <Product id="31102021-2" title="eufy by Anker, RoboVac X8 Hybrid, Robot Vacuum and Mop Cleaner with iPath Laser Navigation, Twin-Turbine Technology generates 2000Pa x2 Suction, AI. Map 2.0 Technology, Wi-Fi, Perfect for Pet Owner" price={31999.00} rating={5} image="https://m.media-amazon.com/images/I/713rjcYi9dL._SX425_.jpg" />
