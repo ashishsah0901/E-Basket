@@ -28,10 +28,14 @@ const CheckoutProduct = (props) => {
                         <p key={i} className="checkoutProduct_rating_uncheck">⭐</p>
                     ))}
                 </div>
-                <button onClick={removeFromBasket}>Remove the item</button>
+                {!props.hideButton && <button onClick={removeFromBasket}>Remove the item</button>}
             </div>
         </div>
     )
 }
 
 export default CheckoutProduct
+
+CheckoutProduct.defaultProps = {
+    hideButton: false
+}

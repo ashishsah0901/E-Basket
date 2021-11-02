@@ -13,7 +13,7 @@ import Footer from './footer/Footer';
 import Payment from './payment/Payment';
 import { loadStripe } from '@stripe/stripe-js';
 import { Elements } from '@stripe/react-stripe-js';
-import OrderHistory from './orderHistory/OrderHistory';
+import Orders from './orders/Orders';
 
 const promise = loadStripe('pk_test_51JrHB6SHIDhmJGCMR62jhycz0vlQOJA6okjOTZBX7wdLxDE3qc1Bq1jMcfChf0qjMsp6IqBgyvHgsGjD3RzSi7AP004IH9ve4E');
 
@@ -59,7 +59,7 @@ function App() {
           </Route>
           <Route exact path='/orders'>
             <Header />
-            <OrderHistory />
+            <Orders />
           </Route>
         </Switch>
       </div>

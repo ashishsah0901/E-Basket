@@ -2,6 +2,10 @@
     background-color: white;
 }
 
+.payment_priceContainer {
+    margin-top: 10px;
+}
+
 .payment_container > h1 {
     text-align: center;
     padding: 10px;
@@ -28,4 +32,33 @@
 
 .payment_address, .payment_item, .payment_details {
     flex: 0.8;
+}
+
+.payment_payButton {
+    background: #f0c14b;
+    border-radius: 2px;
+    border: 1px solid;
+    margin-top: 10px;
+    border-color: #a88734 #9c7e31 #846a29;
+    color: #111;
+    width: 100%;
+    height: 30px;
+    font-weight: bolder;
+    padding: 7px 0;
+}
+
+.payment_payButton:disabled {
+    opacity: 0.5;
+}
+
+.payment_payButton:hover {
+    transform: scale(0.97);
+}
+
+.payment_details > form {
+    max-width: 400px;
+}
+
+.payment_details > h3 {
+    padding-bottom: 20px;
 }
