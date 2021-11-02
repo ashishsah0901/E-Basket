@@ -56,6 +56,10 @@
     border-color: #a88734 #9c7e31 #846a29;
 }
 
+.login_signInButton:hover {
+    transform: scale(0.97);
+}
+
 .login_registerButton {
     border-radius: 2px;
     width: 100%;
@@ -63,4 +67,8 @@
     border: 1px solid;
     border-color: darkgray;
     margin-top: 10px;
+}
+
+.login_registerButton:hover {
+    transform: scale(0.97);
 }

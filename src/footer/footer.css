@@ -9,6 +9,11 @@
     padding: 0 10px;
 }
 
+.footer_moveToTop:hover {
+    transform: scaleY(0.97);
+    color: lightgray;
+}
+
 .footer_moveToTop {
     display: flex;
     flex-direction: column;
