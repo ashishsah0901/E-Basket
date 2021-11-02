@@ -9,7 +9,7 @@
 .home_slider {
     width: 100%;
     z-index: -1;
-    height: 600px;
+    height: 650px;
     margin-bottom: -150px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }

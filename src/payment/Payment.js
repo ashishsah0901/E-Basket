@@ -64,6 +64,7 @@ const Payment = () => {
         setDisabled(e.empty);
         setError(e.error ? e.error.message : '');
     }
+    console.log(getBasketTotal(basket));
     return (
         <div className='payment'>
             <div className="payment_container">
@@ -119,7 +120,7 @@ const Payment = () => {
                                     thousandSeparator={true}
                                     prefix={'₹'}
                                 />
-                                <button disabled={error || processing || disabled || succeeded} className='payment_payButton'>
+                                <button disabled={error || processing || disabled || succeeded || getBasketTotal(basket) <= 0} className='payment_payButton'>
                                     <span>{processing ? <p>Processing...</p> : 'Buy Now'}</span>
                                 </button>
                             </div>
