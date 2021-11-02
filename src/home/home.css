@@ -14,6 +14,11 @@
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
+.home_slider > div {
+    width: 100%;
+    object-fit: contain;
+}
+
 .home_location {
     background-color: #18273c;
     color: white;
