@@ -20,17 +20,20 @@
     cursor: pointer;
 }
 
-.subtotal > button {
+.subtotal_payment {
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+    text-decoration: none;
     background: #f0c14b;
     border-radius: 2px;
     width: 100%;
     height: 30px;
     border: 1px solid;
-    margin-top: 10px;
     border-color: #a99734 #9c7e31 #846a29;
     color: #111;
 }
 
-.subtotal > button:hover {
+.subtotal_payment:hover {
     transform: scale(0.99);
 }
