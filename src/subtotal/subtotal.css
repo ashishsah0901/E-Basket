@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 250px;
-    height: 100px;
-    padding: 20px;
+    width: -webkit-fill-available;
+    height: 110px;
+    padding: 15px;
     background-color: #f3f3f3;
     border: 1px solid #dddddd;
     border-radius: 3px;
@@ -20,11 +20,11 @@
     cursor: pointer;
 }
 
-.subtotal_payment {
-    display: flex;
-    justify-content: center;
-    padding-top: 4px;
+.subtotal_checkoutLink {
     text-decoration: none;
+}
+
+.subtotal_payment {
     background: #f0c14b;
     border-radius: 2px;
     width: 100%;

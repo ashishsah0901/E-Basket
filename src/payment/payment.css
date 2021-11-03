@@ -30,6 +30,15 @@
     flex: 0.2;
 }
 
+.payment_address {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: serif;
+    border: 1px solid;
+    border-color: rgb(114, 114, 114);
+}
+
 .payment_address, .payment_item, .payment_details {
     flex: 0.8;
 }
@@ -61,4 +70,26 @@
 
 .payment_details > h3 {
     padding-bottom: 20px;
+}
+
+@media(max-width: 700px) {
+    .payment_container > h1 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .payment_section {
+        flex-direction: column;
+    }
+
+    .payment_address {
+        margin: 10px 0;
+    }
+
+    .payment_section {
+        margin: 0;
+    }
 }

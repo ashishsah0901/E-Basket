@@ -26,10 +26,10 @@ const Subtotal = () => {
                 thousandSeparator={true}
                 prefix={"₹"}
             />
-            <Link className='subtotal_payment' to='/payment'>
-                {/* <button> */}
-                Proceed to Checkout
-                {/* </button> */}
+            <Link className='subtotal_checkoutLink' to='/payment'>
+                <button className='subtotal_payment'>
+                    Proceed to Checkout
+                </button>
             </Link>
         </div>
     );

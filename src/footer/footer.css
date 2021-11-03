@@ -55,3 +55,28 @@
 .footer_copyright > p {
     font-size: 12px;
 }
+
+@media(max-width: 700px) {
+
+    .footer {
+        height: fit-content;
+    }
+
+    .footer_logo {
+        width: 70px;
+    }
+
+    .footer_moveToTop {
+        font-size: 10px;
+        padding-bottom: 5px;
+    }
+
+    .footer_content {
+        font-size: 10px;
+    }
+
+    .footer_copyright > p {
+        font-size: 10px;
+        padding: 5px;
+    }
+}

@@ -7,6 +7,13 @@
 
 .checkout_right {
     margin-left: 15px;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+}
+
+.checkout_left {
+    width: 70vw;
 }
 
 .ckeckout_title {
@@ -23,4 +30,26 @@
 .checkout_ad {
     width: 100%;
     margin-bottom: 10px;
+}
+
+@media(max-width: 700px) {
+    .ckeckout_title_email {
+        font-size: 16px;
+    }
+
+    .ckeckout_title {
+        font-size: 20px;
+    }
+
+    .ckeckout {
+        flex-direction: column;
+    }
+
+    .checkout_left {
+        width: auto;
+    }
+
+    .checkout_right {
+        width: auto;
+    }
 }

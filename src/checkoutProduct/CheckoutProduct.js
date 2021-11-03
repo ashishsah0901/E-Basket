@@ -13,7 +13,9 @@ const CheckoutProduct = (props) => {
     }
     return (
         <div className='checkoutProduct'>
-            <img className='checkoutProduct_image' src={image} alt="" />
+            <div className="checkoutProduct_imageContainer">
+                <img className='checkoutProduct_image' src={image} alt="" />
+            </div>
             <div className='chectoutProduct_info'>
                 <p className='checkoutProduct_title'>{title}</p>
                 <p className="checkoutProduct_price">

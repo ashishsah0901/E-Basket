@@ -35,7 +35,7 @@ const Footer = () => {
                             Gift a Smile
                         </div>
                     </div>
-                    <div className="content_first">
+                    <div className="footer_content_item">
                         <h3>Connect with Us</h3>
                         <div className="footer_items_detail">
                             Facebook
@@ -47,7 +47,7 @@ const Footer = () => {
                             Instagram
                         </div>
                     </div>
-                    <div className="content_first">
+                    <div className="footer_content_item">
                         <h3>Make Money with Us</h3>
                         <div className="footer_items_detail">
                             Sell on Amazon

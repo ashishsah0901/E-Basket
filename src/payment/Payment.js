@@ -64,7 +64,6 @@ const Payment = () => {
         setDisabled(e.empty);
         setError(e.error ? e.error.message : '');
     }
-    console.log(getBasketTotal(basket));
     return (
         <div className='payment'>
             <div className="payment_container">

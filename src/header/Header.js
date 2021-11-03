@@ -16,12 +16,14 @@ function Header() {
     }
     return (
         <div className="header">
-            <Link to="/">
-                <img className="header_logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Logo" />
-            </Link>
-            <div className="header_search">
-                <input placeholder='Enter to search...' type="text" className="header_searchInput" />
-                <SearchIcon className="header_searchIcon" />
+            <div className="header_menu">
+                <Link to="/">
+                    <img className="header_logo" src="http://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="Logo" />
+                </Link>
+                <div className="header_search">
+                    <input placeholder='Enter to search...' type="text" className="header_searchInput" />
+                    <SearchIcon className="header_searchIcon" />
+                </div>
             </div>
             <div className="header_nav">
                 <Link className='link' to={user ? '/' : '/login'}>
