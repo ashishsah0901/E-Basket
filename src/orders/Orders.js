@@ -14,7 +14,7 @@ const Orders = () => {
             onSnapshot(q, (snapshot) => {
                 setOrders(snapshot.docs.map(doc => ({
                     id: doc.id,
-                    data: doc._document.data.value.mapValue.fields
+                    data: doc.data()
                 })))
             })
         } else {
